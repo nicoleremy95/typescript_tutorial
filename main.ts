@@ -50,7 +50,7 @@ randomValue = 'Nicole';
 
 //any type can use multiple properties
 let myVariable: any = 10;
-console.log(myVariable.name);
+// console.log(myVariable.name);
 myVariable();
 myVariable.toUppercase();
 
@@ -65,3 +65,19 @@ if(hasName(myThing)){
     console.log(myThing.name)
 }
 (myThing as string).toUpperCase();
+
+//Multiple types
+let multiType: number | boolean;
+multiType = 20;
+multiType = false;
+
+    /* Although these two declarations run okay, the first one limits the type whereas the second one could accept any type including a string, object, array, etc
+        let multiType: number | boolean;
+        multiType = 20;
+        multiType = false;
+
+        let anyType: any;
+        anyType = 20;
+        anyType = false;
+
+    */ 
