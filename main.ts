@@ -104,3 +104,27 @@ function subtract(num1: number, num2?: number): number{
 }
 subtract(31,2) //29
 subtract(2) //2
+
+//INTERFACE
+interface Person {
+    firstName: string,
+    lastName: string
+    /*to make a property optional, add ? to the end
+        example
+            interface Person {
+                firstName: string,
+                lastName?: string
+            }
+    */
+
+}
+function fullName(person: Person){
+    console.log(`${person.firstName} ${person.lastName}`)
+}
+
+let p = {
+    firstName: 'Bruce',
+    lastName: 'Wayne'
+};
+
+fullName(p);
