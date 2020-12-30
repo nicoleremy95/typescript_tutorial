@@ -81,3 +81,26 @@ multiType = false;
         anyType = false;
 
     */ 
+
+//FUNCTIONS
+//the last instance of number specifies the return type
+function add(num1: number, num2: number): number{
+    return num1 + num2;
+}
+    /*in Javascript this would be 
+        function add(num1, num2){
+            return num1 + num2;
+        }
+    */
+add(1, 6)
+
+//can't do add(1, '3'); because '3' is not a number
+
+//Optional parameters
+    //you can have as many optional parameters as you would like, however, make sure that they go after the required parameters
+function subtract(num1: number, num2?: number): number{
+    if(num2) return num1 - num2;
+    else return num1;
+}
+subtract(31,2) //29
+subtract(2) //2
