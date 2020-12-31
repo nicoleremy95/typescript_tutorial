@@ -128,3 +128,38 @@ let p = {
 };
 
 fullName(p);
+
+//CLASS 
+class Employee {
+    employeeName: string
+
+    constructor(name: string){
+        this.employeeName = name;
+    }
+
+    greet(){
+        console.log(`Hello ${this.employeeName}`)
+    }
+}
+
+let employee1 = new Employee ('Drake');
+console.log(employee1.employeeName);
+employee1.greet();
+
+
+//CLASS BASED INHERITANCE
+class Manager extends Employee{
+    constructor(managerName: string){
+        super(managerName);
+    }
+
+    delegateWork(){
+        console.log('manager delegating tasks')
+    }
+}
+
+let m1 = new Manager('Drake');
+m1.delegateWork();
+m1.greet();
+console.log(m1.employeeName);
+
