@@ -163,3 +163,6 @@ m1.delegateWork();
 m1.greet();
 console.log(m1.employeeName);
 
+//ACCESS MODIFERS
+
+

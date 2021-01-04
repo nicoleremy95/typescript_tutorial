@@ -115,7 +115,7 @@ var p = {
     lastName: 'Wayne'
 };
 fullName(p);
-//CLASS BASED INHERITANCE
+//CLASS 
 var Employee = /** @class */ (function () {
     function Employee(name) {
         this.employeeName = name;
@@ -143,3 +143,4 @@ var m1 = new Manager('Drake');
 m1.delegateWork();
 m1.greet();
 console.log(m1.employeeName);
+//ACCESS MODIFERS
